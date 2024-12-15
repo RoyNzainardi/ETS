@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toko Kue Mas Hamdan - Toko Kue Terbaik</title>
+    <meta name="description" content="Toko Kue Mas Hamdan menyajikan kue terbaik dengan bahan berkualitas.">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 40%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        header p {
+            color: #555;
+            font-size: 1em;
+        }
+
+        /* Main content */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        section p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Tombol Pesan Sekarang */
+        .order-btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 20px 0;
+            border-radius: 30px; /* Bentuk bulat */
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .order-btn:hover {
+            background-color: #cc5200;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Pusatkan tombol */
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .recipe-button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .recipe-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="TKMH.png" alt="Logo Toko Kue Mas Hamdan">
+        <h1>Toko Kue Mas Hamdan</h1>
+        <p>berdiri sejak masuk ITS</p>
+    </header>
+
+	<section>
+		<h3>Kelezatan dalam setiap gigitan!</h3> 
+        <p>Setiap kue yang dibuat di toko kue Mas Hamdan dibuat hanya dengan bahan-bahan terbaik. Mentega dari sapi yang diberi makan rumput. Tepung tanpa pemutih dengan rasa dan tekstur terbaik. Gula organik hanya dari jawa timur. Telur dari ayam yang mendengarkan musik. Bahkan air kami istimewa. Air tersebut berasal dari mata air gunung yang kami daki untuk diambil.</p> 
+        <p>Memanggang adalah kebahagiaan kami dan kami melakukannya dengan sangat serius.</p>
+    </section>
+    <section>
+		<p>Kue-Kue yang berasal dari dapur Mas Hamdan telah memenangkan berbagai macam penghargaan baik Nasional maupun Internasional</p>
+		<h4>Apalagi yang ditunggu, segera pesan sekarang sebelum kehabisan!</h4>
+	</section>
+
+    <div class="btn-wrapper">
+        <a href="form_pemesanan.php" class="order-btn">PESAN SEKARANG</a>
+    </div>
+
+    <section>
+        <h3>Galeri Kue Kami</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="pancake.jpg" alt="Pancake">
+                <button class="recipe-button" onclick="location.href='Rpancake.html'">Lihat Resep</button>
+            </div>
+            <div class="gallery-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <button class="recipe-button" onclick="location.href='Rpizza.html'">Lihat Resep</button>
+            </div>
+            <div class="gallery-item">
+                <img src="donat.jpg" alt="Donat">
+                <button class="recipe-button" onclick="location.href='Rdonat.html'">Lihat Resep</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
